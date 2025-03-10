@@ -1,0 +1,98 @@
+
+# Bayesian Setting tested on the HR data
+tuner.search(X_train_1, y_train_1, epochs=300, validation_split=0.2, verbose=0)
+
+results:
+Best hyperparameters: 
+{'units1': 192, 'units2': 416, 'units3': 80, 'learning_rate': 0.0001}
+=======================================================================
+Model parameters:
+Model: "my_model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ Layer1 (Dense)              (None, 192)               2764992   
+                                                                 
+ Layer2 (Dense)              (None, 416)               80288     
+                                                                 
+ Layer3 (Dense)              (None, 80)                33360     
+                                                                 
+ dense (Dense)               (None, 1)                 81        
+                                                                 
+=================================================================
+Total params: 2878721 (10.98 MB)
+Trainable params: 2878721 (10.98 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+
+
+1- HR train
+*********************************************************
+reading data from um1_dist150.csv ... 
+the shape of the all data_1 (yX_dist150.csv) is : (18000, 14401)
+X_1 shape : (18000, 14400)
+y_1 shape : (18000,)
+the shape of the training set (input) is : (14400, 14400)
+the shape of the training set (target) is : (14400,)
+the shape of the test set (input) is : (3600, 14400)
+the shape of the test set (target) is : (3600,)
+training_HR took 1280.69 seconds
+
+W and b for yX_um1_dist150.csv: 
+W1 shape = (14400, 192) , b1 shape = (192,):
+W2 shape = (192, 416) , b2 shape = (416,):
+W3 shape = (416, 80) , b3 shape = (80,):
+
+450/450 [==============================] - 2s 3ms/step
+training error_1 = 0.02811185290953468
+training R2_1 = 0.9727089933909792
+113/113 [==============================] - 0s 3ms/step
+test error_1 = 0.23245076251185402
+test R2_1 = 0.7763530903413947
+********************************************************
+
+2- MR train with transfer learning
+
+reading data from yX_um2_dist150.csv ... 
+the shape of the all data_2 (yX_um2_dist150.csv) is : (18000, 14401)
+X_2 shape : (18000, 14400)
+y_2 shape : (18000,)
+the shape of the training set (input) is : (14400, 14400)
+the shape of the training set (target) is : (14400,)
+the shape of the test set (input) is : (3600, 14400)
+the shape of the test set (target) is : (3600,)
+training_MR took 1274.45 seconds
+
+W and b for yX_um2_dist150.csv: 
+W1 shape = (14400, 192) , b1 shape = (192,):
+W2 shape = (192, 416) , b2 shape = (416,):
+W3 shape = (416, 80) , b3 shape = (80,):
+
+450/450 [==============================] - 1s 3ms/step
+training error_2 = 0.04152406681184998
+training R2_2 = 0.9596884066858765
+113/113 [==============================] - 0s 3ms/step
+test error_2 = 0.1618323524552761
+test R2_2 = 0.8442789464445461
+*************************************************************
+
+3- LR train with TL
+reading data from yX_um3_dist150.csv ... 
+the shape of the all data_3 (yX_um3_dist150.csv) is : (18000, 14401)
+X_3 shape : (18000, 14400)
+y_3 shape : (18000,)
+training_LR took 14739.04 seconds
+
+training error_3 = 0.03898604060787116
+training R2_3 = 0.9621810284090799
+K-Fold cross validation results: 
+R-Squares mean of 10 folds:  0.83608522542868
+Test_MSE mean of 10 folds:  0.16919889786634985
+
+
+W and b for yX_um3_dist150.csv: 
+W1 shape = (14400, 192) , b1 shape = (192,):
+W2 shape = (192, 416) , b2 shape = (416,):
+W3 shape = (416, 80) , b3 shape = (80,):
+
+
