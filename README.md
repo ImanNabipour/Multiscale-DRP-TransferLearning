@@ -14,5 +14,5 @@ Official implementation of the paper **"A Data‑Driven Approach for Efficient P
 **Authors:** Iman Nabipour, Maysam Mohammadzadeh‑Shirazi, Amir Raoof, Jafar Qajar  
 **Journal:** Transport in Porous Media  
 **Year:** 2025  
-**DOI:** [10.1016/j.advwatres.2026.105311](https://doi.org/10.1007/s11242-025-02167-3)
+**DOI:** https://doi.org/10.1007/s11242-025-02167-3
 
