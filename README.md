@@ -3,3 +3,17 @@ This repository provides open-source code for our multiscale transfer learning a
 
 License
 This project is licensed under the MIT License.
+
+![DOI](https://img.shields.io/badge/DOI-10.1007/s11242-025-02167-3-blue)
+![Python](https://img.shields.io/badge/Python-3.8%2B-brightgreen)
+
+Official implementation of the paper **"A Data‑Driven Approach for Efficient Prediction of Permeability of Porous Rocks by Combining Multiscale Imaging and Machine Learning"** published in *Transport in Porous Media* (2025).
+
+
+## 📄 Paper Information
+
+**Authors:** Iman Nabipour, Maysam Mohammadzadeh‑Shirazi, Amir Raoof, Jafar Qajar  
+**Journal:** Transport in Porous Media  
+**Year:** 2025  
+**DOI:** [10.1016/j.advwatres.2026.105311](https://doi.org/10.1007/s11242-025-02167-3)
+
