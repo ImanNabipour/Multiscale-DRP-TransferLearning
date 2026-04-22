@@ -16,3 +16,9 @@ Official implementation of the paper **"A Data‑Driven Approach for Efficient P
 **Year:** 2025  
 **DOI:** https://doi.org/10.1007/s11242-025-02167-3
 
+## 📝 Citation
+
+If you use this code or datasets in your research, please cite the following paper:
+
+Nabipour, I., Mohammadzadeh‑Shirazi, M., Raoof, A., & Qajar, J. (2025). A Data‑Driven Approach for Efficient Prediction of Permeability of Porous Rocks by Combining Multiscale Imaging and Machine Learning. *Transport in Porous Media*,  (2025) 152:29.  
+https://doi.org/10.1007/s11242-025-02167-3
